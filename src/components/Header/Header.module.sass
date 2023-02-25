@@ -5,9 +5,21 @@
     display: flex
     justify-content: space-between
     align-items: center
+    .logo
+        @media( max-width: 640px )
+            display: none
     .menu
         display: flex
         align-items: center
         gap: 2rem
+        @media ( max-width: 450px )
+            display: none
         button
             @include header-button
+        &__hamburger
+            display: none
+            @media ( max-width: 450px )
+                display: flex
+                width: 4rem
+                height: 4rem
+                    

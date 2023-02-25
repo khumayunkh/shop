@@ -18,36 +18,48 @@
             font-weight: 400
             font-size: 2rem
             padding-left: 8rem
+            @media( max-width: 400px )
+                padding-left: 1rem
             &::before  
                 display: block 
-                width:8rem                 
+                width: 8rem                 
                 content: ''                  
                 position: absolute           
                 border-bottom: 1px solid #000
                 top: 2rem
                 left: -1rem
+                @media( max-width: 400px )
+                    width: 1rem
     .content
         display: flex
         justify-content: space-between
         align-items: center 
+        @media ( max-width: 950px )
+            flex-direction: column
+            gap: 4rem
         .service
+            max-width: 40rem
             display: flex
             flex-direction: column
             justify-content: center
             align-items: flex-start
-            gap: 1.2rem
+            gap: 1.2rem            
+            @media ( max-width: 1000px )
+                align-items: center
+                p
+                    text-align: center
             &:hover
                 box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px
             h4
                 font-weight: 500
-                font-size: 20px
-                line-height: 23px
+                font-size: 2rem
+                line-height: 2.3rem
                 color: #000000
             p
                 width: 29.7rem
                 font-weight: 300
-                font-size: 20px
-                line-height: 30px
+                font-size: 2rem
+                line-height: 3rem
                 color: #696161
             .background1
                 @include service_background(rgba(21, 188, 224, 0.1),'./../../assets/delevary.png')

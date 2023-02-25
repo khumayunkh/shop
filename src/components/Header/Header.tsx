@@ -1,11 +1,13 @@
 import React from "react";
 import style from './Header.module.sass'
+import menu from './../../assets/menu.png'
 
 
 function Header(){
     return(
         <>
         <div className={style.container}>
+            <img src={menu} className={style.menu__hamburger}/>
             <div className={style.logo}>
                 <h2>SQ R3</h2>
             </div>

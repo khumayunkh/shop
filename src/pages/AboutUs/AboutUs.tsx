@@ -18,7 +18,7 @@ function AboutUs(){
                 </p>
             </div>
             <div className={style.content}>
-                <img src={img}/>
+                <img className={style.content__img} src={img}/>
                 <div className={style.description}>
                     <p>
                     Lorem Ipsum has been the industry's standard dummy 
@@ -32,9 +32,9 @@ function AboutUs(){
                     </p>
                     <button>More about us</button>
                     <div className={style.shops}>
-                        <img src={amazon}/>
-                        <img src={alibaba}/>
-                        <img src={image}/>
+                        <img className={style.shops__logo} src={amazon}/>
+                        <img className={style.shops__logo} src={alibaba}/>
+                        <img className={style.shops__logo} src={image}/>
                     </div>
                 </div>
             </div>
