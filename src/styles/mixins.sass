@@ -1,4 +1,4 @@
-@mixin button
+@mixin header-button
     padding: .8rem 1.2rem
     border: none
     background-color: white
@@ -12,3 +12,21 @@
         border-radius: .5rem
         color: white
     
+@mixin button
+    padding: .8rem 1.2rem
+    border: none
+    background: none
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 21px
+    background-color: #373737
+    border-radius: .5rem
+    color: white    
+
+@mixin service_background($color)
+    width: 7.5rem
+    height: 7.5rem
+    background: $color
+    border-radius: .5rem    

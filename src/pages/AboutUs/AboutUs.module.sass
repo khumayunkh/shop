@@ -1,5 +1,7 @@
+@import './../../styles/mixins'
+    
 .container
-    padding: 8% 0
+    padding: 10% 0
     display: flex
     flex-direction: column
     gap: 4rem
@@ -24,3 +26,23 @@
                 border-bottom: 1px solid #000
                 top: 1.2rem
                 left: -.3rem
+    .content
+        display: flex
+        gap: 4rem
+        .description
+            width: 66.3rem
+            display: flex
+            flex-direction: column
+            justify-content: start
+            align-items: flex-start
+            gap: 5rem
+            button
+                @include button
+            p
+                font-weight: 300
+                font-size: 2rem            
+            .shops
+                width: 100%
+                display: flex
+                justify-content: space-between
+                align-items: center   

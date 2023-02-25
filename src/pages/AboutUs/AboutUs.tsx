@@ -30,6 +30,7 @@ function AboutUs(){
                     It has survived not only five centuries, but also 
                     the leap into electronic typesetting
                     </p>
+                    <button>More about us</button>
                     <div className={style.shops}>
                         <img src={amazon}/>
                         <img src={alibaba}/>
