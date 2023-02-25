@@ -5,8 +5,8 @@
     font-family: 'Roboto'
     font-style: normal
     font-weight: 400
-    font-size: 18px
-    line-height: 21px
+    font-size: 1.8rem
+    line-height: 2.1rem
     &:hover
         background-color: #373737
         border-radius: .5rem
@@ -19,14 +19,18 @@
     font-family: 'Roboto'
     font-style: normal
     font-weight: 400
-    font-size: 18px
-    line-height: 21px
+    font-size: 1.8rem
+    line-height: 2.1rem
     background-color: #373737
     border-radius: .5rem
     color: white    
 
-@mixin service_background($color)
+@mixin service_background($color,$image)
     width: 7.5rem
     height: 7.5rem
     background: $color
-    border-radius: .5rem    
+    border-radius: .5rem   
+    background-size: 5rem
+    background-position: center
+    background-repeat: no-repeat
+    background-image: url($image) 
